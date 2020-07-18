@@ -1,0 +1,113 @@
+This mod was originally uploaded onto the Japanese Minecraft forums by MG36 in a semi finished state. The mod works perfectly fine client side but will not load
+server side due to the mod calling upon the AdvancedModelLoader despite the fact the AdvancedModelLoader does not come stock with forge, resulting in an
+exception and the server crashing. I am uploading it to github in the hopes of not only preserving it, but allowing others to make edits to it to hopefully someday
+make the mod functional enough to work server side and client side. Below are copies of the original ReadMe's from the mod author.
+
+このmodはストライカーユニットのような防具を追加します。
+
+<導入方法>
+1.Forge1.7.10を導入する。
+2.ダウンロードした.zipを解凍する。
+3.中のstrikerunitフォルダをmodsに入れてください。
+4.タイトルまで進んだら導入成功です。
+
+<追加されるもの>
+空戦用ストライカー二つと陸戦用ストライカー一つ追加されます。
+空戦用
+・零式艦上戦闘脚
+・震電
+陸戦用
+・ティーガー
+おまけ機能としてobjモデルを用意すれば自作のストライカーユニットも追加できます。
+詳しくはreadme_add.txtを参照してください。
+レシピはrecipe.pngを参照してください。
+
+<機能>
+ブーツ防具として機能します。レギンス防具は装備しないでください(3人称表示がおかしくなります)
+装備中は攻撃を受けてもHPが基本減らなくなります。(ただし装備の耐久値が半分以下になるとダメージを受けるようになります)
+
+<操作方法・特徴>
+空戦用
+視点の方向に移動可能です。
+空中移動が可能ですが耐久値が低いです。
+スニークで高速移動が可能です。
+
+陸戦用
+視点の方向に移動可能です。
+空戦用と比べて移動速度は遅いですが圧倒的に耐久度が高いです。
+スニークで高速移動が可能です。
+
+<config>
+StrikerUnit.cfg
+
+B:cfg_left=true　falseにすると3人称視点での視点のずれがなくなります。
+B:cfg_sound=true　falseにするとプロペラ音などがなくなります。
+
+ストライカーユニットの追加方法について
+
+<1.テキストファイルの作成>
+mods/strikerunit/add/strikerのファイルを参照にしてください
+各種値について
+ArmorTexture　objモデルのテクスチャです。mods/strikerunit/add/addmodelにモデルのテクスチャを入れてください
+ArmorObj　objモデルです。mods/strikerunit/add/addmodelにモデルを入れてください
+Speed,　移動速度です。double 値
+MaxSpeed,　スニーク時の移動速度です。double 値
+PraSpeed,　プロペラの回転速度です。　float 値
+PraLeftposX,　左プロペラの回転の中心点のX軸です。　float 値
+PraLeftposY,　左プロペラの回転の中心点のY軸です。　float 値
+PraLeftposZ,　左プロペラの回転の中心点のZ軸です。　float 値
+PraRightposX,　右プロペラの回転の中心点のX軸です。　float 値
+PraRightposY,　右プロペラの回転の中心点のY軸です。　float 値
+PraRightposZ,　右プロペラの回転の中心点のZ軸です。　float 値
+ArmorDamage,　防具の耐久値です。この値の13倍の値になります。　int 値
+B_GatlingGun　ガトリングガンの使用弾薬を読み込みます。modid,アイテム名
+
+
+Texture　使用するアイテムのテクスチャです。mods/battlemachine/add/addtextureにテクスチャを入れてください
+Name　日本語のアイテム名です。
+StrikerUnit　登録アイテム名です。(StrikerUnitで空戦用、StrikerUnitRで陸戦用です。)
+
+Recipe1　レシピ1段目です(使用しない箇所は半角スペースにしてください)。abc
+Recipe2　レシピ2段目です(使用しない箇所は半角スペースにしてください)。def
+Recipe3　レシピ3段目です(使用しない箇所は半角スペースにしてください)。ghi
+ItemA　aに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+ItemB　bに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+ItemC　cに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+ItemD　dに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+ItemE　eに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+ItemF　fに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+ItemG　gに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+ItemH　hに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+ItemI　iに入るアイテムを登録します(ない場合はnullを入れてください)。modid,アイテム名
+addNewRecipe　上記のレシピを登録します。出来る登録アイテム名,出来る数
+
+
+<2.モデルの作成>
+mods/strikerunit/add/addmodelのmqoモデルを参照にしてください
+objモデルのみ使用可能です。
+面はすべて三角化してください
+稼動可能なパーツは以下の材質にあわせてください
+mat1　左ユニット
+mat2　左プロペラ
+mat3　右ユニット
+mat4　右プロペラ
+mat5  背中ユニット
+mat31 左足
+mat32 右足
+mat30 その他(非表示)
+
+また、モデルの大きさについて、
+1F = 1D = (メタセコイア上で)100 = 1m(1ブロック)
+となっています。
+
+
+<3.追加>
+1、mods/strikerunit/add/strikerに<1>のtxtファイルを入れてください。
+　（登録アイテム名が被っているとクラッシュします。
+　　レシピのアイテム名はファイルより先に読み込まれたもののみ使用できます）。
+2、mods/strikerunit/add/addmodelにobjモデルとテクスチャを入れてください。
+3、mods/strikerunit/add/addtextureにアイテムテクスチャを入れてください。
+4、ゲームを起動してアイテムが追加されていれば追加成功です。
+
+
+Feel free to translate them!
