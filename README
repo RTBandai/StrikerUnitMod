@@ -1,7 +1,11 @@
 This mod was originally uploaded onto the Japanese Minecraft forums by MG36 in a semi finished state. The mod works perfectly fine client side but will not load
 server side due to the mod calling upon the AdvancedModelLoader despite the fact the AdvancedModelLoader does not come stock with forge, resulting in an
 exception and the server crashing. I am uploading it to github in the hopes of not only preserving it, but allowing others to make edits to it to hopefully someday
-make the mod functional enough to work server side and client side. Below are copies of the original ReadMe's from the mod author.
+make the mod functional enough to work server side and client side. Below are copies of the original ReadMe's from the mod author. 
+
+To use the mod client side all you have to do is unpack one of the two versions provided (The most up to date is the .rar collection, with the other one being the original version),
+and use a version of 1.7.10 forge. I have encountered issues with using the new minecraft launcher and forge, as the mod seems to have issues with it. Ive found taking
+a modpack like FTB Infinity evolved and putting the mod insilde the mods folder does work however.
 
 このmodはストライカーユニットのような防具を追加します。
 
