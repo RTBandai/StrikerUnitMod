@@ -1,0 +1,31 @@
+
+ArmorTexture,su03.png
+ArmorObj,su03.obj
+Speed,0.1d
+MaxSpeed,0.3d
+PraSpeed,20f
+PraLeftposX,0.15f
+PraLeftposY,0.3f
+PraLeftposZ,0f
+PraRightposX,-0.15f
+PraRightposY,0.3f
+PraRightposZ,0
+ArmorDamage,500
+
+Texture,strikerunit03
+Name,ティーガー
+StrikerUnitR,Tiger
+
+Recipe1,a c
+Recipe2,def
+Recipe3,g i
+ItemA,minecraft,iron_block
+ItemB,null
+ItemC,minecraft,iron_block
+ItemD,minecraft,iron_block
+ItemE,minecraft,iron_leggings
+ItemF,minecraft,iron_block
+ItemG,minecraft,iron_block
+ItemH,null
+ItemI,minecraft,iron_block
+addNewRecipe,Tiger,1

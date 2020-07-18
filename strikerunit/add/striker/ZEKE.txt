@@ -1,0 +1,31 @@
+
+ArmorTexture,su02.png
+ArmorObj,su02.obj
+Speed,0.3d
+MaxSpeed,0.7d
+PraSpeed,20f
+PraLeftposX,0.15f
+PraLeftposY,0.5f
+PraLeftposZ,0f
+PraRightposX,-0.15f
+PraRightposY,0.5f
+PraRightposZ,0
+ArmorDamage,50
+
+Texture,strikerunit02
+Name,óÎéÆäÕè„êÌì¨ãr
+StrikerUnit,ZEKE
+
+Recipe1,abc
+Recipe2,d f
+Recipe3,g i
+ItemA,minecraft,iron_ingot
+ItemB,minecraft,iron_leggings
+ItemC,minecraft,iron_ingot
+ItemD,minecraft,iron_ingot
+ItemE,null
+ItemF,minecraft,iron_ingot
+ItemG,minecraft,blaze_rod
+ItemH,null
+ItemI,minecraft,blaze_rod
+addNewRecipe,ZEKE,1

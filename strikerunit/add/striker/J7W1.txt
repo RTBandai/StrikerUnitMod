@@ -1,0 +1,31 @@
+
+ArmorTexture,su01.png
+ArmorObj,su01.obj
+Speed,0.6d
+MaxSpeed,1.5d
+PraSpeed,30f
+PraLeftposX,0.15f
+PraLeftposY,0.5f
+PraLeftposZ,0f
+PraRightposX,-0.15f
+PraRightposY,0.5f
+PraRightposZ,0
+ArmorDamage,100
+
+Texture,strikerunit
+Name,êkìd
+StrikerUnit,J7W1
+
+Recipe1,abc
+Recipe2,d f
+Recipe3,g i
+ItemA,minecraft,diamond_block
+ItemB,minecraft,diamond_leggings
+ItemC,minecraft,diamond_block
+ItemD,minecraft,diamond_block
+ItemE,null
+ItemF,minecraft,diamond_block
+ItemG,minecraft,blaze_rod
+ItemH,null
+ItemI,minecraft,blaze_rod
+addNewRecipe,J7W1,1
